@@ -114,7 +114,7 @@ export const ChatRoom = ({ roomId, onLeave }: ChatRoomProps) => {
                       : 'bg-message-other'
                   } rounded-2xl px-4 py-3 border border-border-subtle`}
                 >
-                  <p className="text-text-primary break-words">{message.content}</p>
+                  <p className="text-text-primary wrap-break-words">{message.content}</p>
                   <span className="text-text-muted text-xs mt-1 block">
                     {formatTime(message.timestamp)}
                   </span>

@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  /* Add your custom colors here */
+  --color-app: #0B0F14;
+  --color-card: #111827;
+  --color-surface: #1F2933;
+  --color-text-primary: #E5E7EB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-muted: #6B7280;
+  --color-accent: #22D3EE;
+  --color-accent-hover: #06B6D4;
+  --color-accent-soft: #0E7490;
+  --color-success: #10B981;
+  --color-info: #38BDF8;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-border-subtle: #1F2937;
+  --color-border-active: #22D3EE;
+  --color-message-own: #164E63;
+  --color-message-other: #1F2937;
+  
+  /* Optional: Add custom spacing, fonts, etc. if needed */
+}
+
+/* You can also add custom styles */

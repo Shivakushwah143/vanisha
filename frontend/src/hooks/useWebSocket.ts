@@ -2,7 +2,15 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import type { Message, WebSocketMessage } from '../types/index';
 
-const WS_URL = 'ws://localhost:3000';
+const WS_URL = import.meta.env.VITE_API_BASE_URL;
+
+if (!WS_URL) {
+  throw new Error("VITE_WS_URL is not defined");
+}
+
+const socket = new WebSocket(WS_URL);
+console.log(socket)
+
 
 export const useWebSocket = (roomId: string | null) => {
   const [messages, setMessages] = useState<Message[]>([]);
